@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-add-new-book, .App,
+.bottom-controllers {
+    display: flex;
+}
+
+.bottom-controllers,
+.App {
+    flex-flow: row nowrap;
+}
+
+.bottom-controllers {
+    justify-content: space-around;
+}
+
+.App {
+    align-items: stretch;
+    padding: 20px;
+}
+
+.App > div {
+    max-width: 50vw;
+    width: 50vw;
+}
+
+.App form {
+    margin-top: 10px;
+    padding: 10px 20px 20px;
+}
+
+.form-add-new-book {
+    flex-flow: column;
+    align-items: center;
+}
+
+.bottom-controllers button,
+.form-add-new-book input[type=submit] {
+    transition: .6s;
+}
+
+.form-add-new-book form,
+.form-add-new-book label,
+.form-add-new-book input {
+    display: block;
+    width: 100%;
+}
+
+.bottom-controllers button,
+.form-add-new-book input {
+    outline: none;
+    border-radius: 4px;
+}
+
+.list-books p,
+.bottom-controllers button {
+    padding: 10px 5px;
+}
+
+.form-add-new-book input {
+    border: none;
+    box-shadow: inset 0 0 1px black;
+    padding: 10px 0;
+}
+
+.form-add-new-book label {
+    margin-top: 10px;
+}
+
+.form-add-new-book label:last-child {
+    text-align: center;
+}
+
+.form-add-new-book input[type=submit] {
+    box-shadow: none;
+    cursor: pointer;
+    background: silver;
+    display: inline-block;
+    margin: 20px auto 0;
+    width: auto;
+    padding: 10px;
+}
+
+.form-add-new-book input[type=submit]:hover {
+    background: greenyellow;
+}
+
+.list-books {
+    list-style: none;
+    padding-left: 40px;
+    flex-grow: 1;
+}
+
+.list-books li {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.list-books li:nth-child(odd) {
+    background: silver;
+}
+
+.bottom-controllers button {
+    white-space: nowrap;
+    background: none;
+    width: 150px;
+    cursor: pointer;
+}
+
+.bottom-controllers button:first-child:hover {
+    background: orange;
+}
+
+.bottom-controllers button:last-child:hover {
+    background: red;
+}
+
+.center {
+    text-align: center;
+}
+
+.form-edit {
+    box-shadow: inset 0 0 5px rgba(255, 63, 70, 0.19);
+    animation: move 2s infinite linear;
+}
+
+@keyframes move {
+    50% {
+        box-shadow: inset 0 0 5px rgb(255, 89, 42);
+    }
+    100% {
+        box-shadow: inset 0 0 5px rgba(255, 63, 70, 0.19);
+    }
+}
