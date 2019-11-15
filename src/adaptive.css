@@ -1,0 +1,12 @@
+@media (min-width: 319px) and (max-width: 569px) {
+    .App {
+        flex-flow: column !important;
+    }
+    .App > div {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .list-books {
+        padding: 10px !important;
+    }
+}
